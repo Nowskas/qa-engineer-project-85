@@ -15,3 +15,20 @@
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
+
+- summary: |
+    Проверка авторизации с помощью электронной почты
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться с помощью электронной почты
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+  test-data: |
+    e-mail: ipp48980@zslsz.com
+    Пароль = jioSUO9SFf
+  steps:
+    - Нажимаем на кнопку "Sign in"
+    - Заполняем поля для авторизации
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
+    
