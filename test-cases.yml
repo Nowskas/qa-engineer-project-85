@@ -89,7 +89,7 @@
   requirement: |
     - Пользователь должен иметь возможность создавать игру с ботом
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы в Dicord
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby. Пользователь авторизован
   test-data: |
     empty
   steps:
