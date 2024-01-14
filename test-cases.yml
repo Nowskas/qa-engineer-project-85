@@ -37,7 +37,7 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться с помощью Github
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы на Github.
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы на Github
   test-data: |
     empty
   steps:
@@ -51,12 +51,35 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться с помощью Discord
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы в Dicord.
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы в Dicord
   test-data: |
     empty
   steps:
     - Нажимаем на кнопку "Sign in"
     - Нажимаем на кнопку "Sign in with Dicord"
     - Нажимаем на кнопку "Авторизовать"
+  expected-result: |
+    Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
+
+- summary: |
+    Проверка восстановления пароля с помощью электронной почты
+  requirement: |
+    Пользователь должен иметь возможность восстановить пароль с помощью электронной почты
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+  test-data: |
+    empty
+  steps:
+    - Нажимаем на кнопку "Sign in"
+    - Нажимаем на гиперссылку с текстом "Forgot your password?"
+    - Вводим e-mail который использовали при регистрации на codebattle
+    - Нажимаем на кнопку "Submit"
+    - Переходим по ссылке из письма от codebattle
+    - Вводим новый пароль
+    - Нажимаем кнопку "Save"
+    - Заходим на главную страницу веб-игры https://codebattle.hexlet.io/
+    - Нажимаем на кнопку "Sign in"
+    - Заполняем данные для входа 
+    - Нажимаем на кнопку "Submit"
   expected-result: |
     Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
