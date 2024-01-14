@@ -45,3 +45,18 @@
     - Нажимаем на кнопку "Sign in with Github"
   expected-result: |
     Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
+
+- summary: |
+    Проверка авторизации с помощью Discord
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться с помощью Discord
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы в Dicord.
+  test-data: |
+    empty
+  steps:
+    - Нажимаем на кнопку "Sign in"
+    - Нажимаем на кнопку "Sign in with Dicord"
+    - Нажимаем на кнопку "Авторизовать"
+  expected-result: |
+    Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
