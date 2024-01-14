@@ -37,12 +37,13 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться с помощью Github
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы на Github.
   test-data: |
     e-mail: hoc97363@zbock.com
     Пароль = jioSUO9SFf1
   steps:
     - Нажимаем на кнопку "Sign in"
+    - Нажимаем на кнопку "Sign in with Github"
     - Заполняем поля для авторизации
     - Нажимаем на кнопку "Submit"
   expected-result: |
