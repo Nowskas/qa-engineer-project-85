@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
-    Сервис временной почты: https://10minutemail.net/
+    Сервис временной почты = https://10minutemail.net/
     Логин = Sergey511 Пароль = jioSUO9SFf1
     e-mail: hoc97363@zbock.com
   steps:
@@ -23,7 +23,7 @@
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
-    Сервис временной почты: https://10minutemail.net/
+    Сервис временной почты = https://10minutemail.net/
     Логин = Sergey5111 Пароль = jioSUO9SFf1
     e-mail: hoc973623@zbock.com
   steps:
@@ -31,7 +31,7 @@
     - Заполняем поля для регистрации
     - Нажимаем на кнопку "Submit"
   expected-result: |
-    Должна прийти письмо-подтверждение о регистрации на электронную почту
+    Должно прийти письмо-подтверждение о регистрации на электронную почту
     
 - summary: |
     Проверка авторизации с помощью электронной почты
@@ -40,6 +40,7 @@
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
+    Сервис временной почты = https://10minutemail.net/
     e-mail = hoc97363@zbock.com
     Пароль = jioSUO9SFf1
   steps:
@@ -266,6 +267,7 @@ module.exports = solution;
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
+    Сервис временной почты = https://10minutemail.net/
     Nickname = Duo2024
     Password = jioSUO9SFf1
     e-mail = hoc9736s3@zbock.com
