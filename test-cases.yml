@@ -203,7 +203,7 @@ module.exports = solution;
   requirement: |
     Пользователь должен иметь возможность создать игру без регистрации
   prerequisites: |
-    Открыта страница лобби веб-игры https://codebattle.hexlet.io/
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
     empty
   steps:
