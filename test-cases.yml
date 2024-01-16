@@ -23,7 +23,7 @@
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
-    e-mail: hoc97363@zbock.com
+    e-mail = hoc97363@zbock.com
     Пароль = jioSUO9SFf1
   steps:
     - Нажимаем на кнопку "Sign in"
@@ -237,6 +237,24 @@ module.exports = solution;
     empty
   steps:
     - Нажимаем на кнопку "Sign in"
+    - Нажимаем на кнопку "Sign in with Dicord"
+    - Нажимаем на кнопку "Авторизовать"
+  expected-result: |
+    Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией. Имя пользователя должно быть не более 16 символов
+
+- summary: |
+    Проверка использования запрещенных символов в имени пользователя
+  requirement: |
+    Пользователь не может использовать запрещенные символы в имени пользователя
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+  test-data: |
+    Nickname = Duo2024
+    Password = jioSUO9SFf1
+    e-mail = hoc9736s3@zbock.com
+    ☻#[ Duo2024!
+  steps:
+    - Нажимаем на кнопку "Sign up"
     - Нажимаем на кнопку "Sign in with Dicord"
     - Нажимаем на кнопку "Авторизовать"
   expected-result: |
