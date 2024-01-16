@@ -226,3 +226,36 @@ module.exports = solution;
     - Открываем вкладку чата "General"
   expected-result: |
     Текст "Hi Hexlet" не должен отобразиться во вкладке "General"
+
+- summary: |
+    Проверка присвоения значению "Your name" более 16 символов
+  requirement: |
+    Пользователь не может присваивать значению "Your name" более 16 символов
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Имя пользователя в Dicord более 16 символов
+  test-data: |
+    empty
+  steps:
+    - Нажимаем на кнопку "Sign in"
+    - Нажимаем на кнопку "Sign in with Dicord"
+    - Нажимаем на кнопку "Авторизовать"
+  expected-result: |
+    Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией. Имя пользователя должно быть не более 16 символов
+
+- summary: |
+    Проверка возможности сохранять изменения громкости уведомлений
+  requirement: |
+    Пользователь должен иметь возможность изменять громкеость уведомлений
+  prerequisites: |
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby. Пользователь авторизован
+  test-data: |
+    empty
+  steps:
+    - Открываем вкладку чата "Notification"
+    - Набираем текст "Hi Hexlet"
+    - Нажимаем на кнопку "Send"
+    - Открываем вкладку чата "General"
+  expected-result: |
+    Текст "Hi Hexlet" не должен отобразиться во вкладке "General"
+
+    
