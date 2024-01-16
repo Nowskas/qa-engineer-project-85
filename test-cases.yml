@@ -210,3 +210,19 @@ module.exports = solution;
     - Нажимаем на кнопку "Try simple battle"
   expected-result: |
     Должна произойти переадресация на страницу с рандомно созданной игрой
+
+- summary: |
+    Проверка отправки текста во вкладке чата "Notification"
+  requirement: |
+    Пользователям должна быть исключена возможность отправки текста во вкладке чата "Notification"
+  prerequisites: |
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby. Пользователь авторизован
+  test-data: |
+    empty
+  steps:
+    - Открываем вкладку чата "Notification"
+    - Набираем текст "Hi Hexlet"
+    - Нажимаем на кнопку "Send"
+    - Открываем вкладку чата "General"
+  expected-result: |
+    Текст "Hi Hexlet" не должен отобразиться во вкладке "General"
