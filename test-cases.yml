@@ -196,14 +196,15 @@
     Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby. Пользователь авторизован. Выбран язык программирования "
   test-data: |
     #Код для победы в игре
-    const _ = require("lodash");
-const R = require("rambda");
+    #const _ = require("lodash");
+#const R = require("rambda");
 
-const solution = (width, length) => {
-  return width * length;
-};
+#const solution = (width, length) => {
+  #return width * length;
+#};
 
-module.exports = solution;
+#module.exports = solution;
+
   steps:
     - Нажимаем на кнопку "Create a game"
     - Выбираем уровень игры - "elementary" нажимаем на кнопку одна "звезда"
