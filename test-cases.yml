@@ -243,6 +243,7 @@ module.exports = solution;
     - Нажимаем на кнопку "Send"
     - Открываем вкладку чата "General"
   expected-result: |
+    Поле для набора сообщений недоступно для ввода
     Текст "Hi Hexlet" не должен отобразиться во вкладке "General"
 
 - summary: |
