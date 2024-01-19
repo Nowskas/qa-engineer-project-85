@@ -384,9 +384,21 @@
     - Полю "Type" присваиваем значение "team"
     - Полю "Description" присваиваем значение "A tournament for real dungeon conquerors"
     - Полю "Starts at (Etc/GMT-3)" присваиваем значение "+1 минута от вашего настоящего времени"
-    - Полю "Access type" "public"
+    - Полю "Access type" присваиваем значение "public"
     - Полю "Task strategy" присваиваем значение "game"
     - Чекбокс Use chat должен быть в активном состоянии
+    - Полю "Task provider" присваиваем значение "level"
+    - Полю "Level" присваиваем значение "elementary"
+    - Полю "Players limit" присваиваем значение "64"
+    - Полю "Default language" присваиваем значение "js"
+    - Полю "Match timeout seconds" присваиваем значение "180"
+    - Полю "Break duration seconds" присваиваем значение "30"
+    - Полю "Team 1 name" присваиваем значение "Fire"
+    - Полю "Team 2 name" присваиваем значение "Water"
+    - Полю "Rounds to win" присваиваем значение "3"
+    - Нажимаем кнопку "Create"
+    
+    
     
     
   expected-result: |
