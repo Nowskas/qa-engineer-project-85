@@ -364,3 +364,24 @@
     - Перейти по ссылке https://codebattle.hexlet.io/#tournaments
   expected-result: |
     В поле "Creator" отображается имя создателя турнира
+
+- summary: |
+    Проверка создания турнира
+  requirement: |
+    Пользователь должен иметь возможность создавать турнир
+  prerequisites: |
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby 
+    Авторизованы два пользователя
+  test-data: |
+    empty
+  steps:
+    - Открываем вкладку "TOURNAMENTS"
+    - Нажимаем "You may want to create one" #при первом создании турнира
+    - Нажимаем "Tournaments info" #при втором и последующих созданиях турнира
+    - Заполняем форму "Create a new tournament"
+    - Вводим "My fancy tournament Hexlet 2024" в поле "Name"
+    - Нажимаем "Create"
+    - Перейти по ссылке https://codebattle.hexlet.io/#tournaments
+    Полю "" присвоено значение "" 
+  expected-result: |
+    В поле "Creator" отображается имя создателя турнира
