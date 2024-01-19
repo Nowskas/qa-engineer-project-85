@@ -347,3 +347,20 @@
     - Открываем вкладку "My Profile"
   expected-result: |
     Графически отображается статистика пользователя
+
+- summary: |
+    Проверка отображения имения создателя турнира
+  requirement: |
+    Поле "Creator" должно отображать имя создателя турнира
+  prerequisites: |
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby. Пользователь авторизован
+  test-data: |
+    empty
+  steps:
+    - Открываем вкладку "TOURNAMENTS"
+    - Нажимаем "You may want to create one"
+    - Вводим "My fancy tournament Hexlet 2024" в поле "Name"
+    - Нажимаем "Create"
+    - Перейти по ссылке https://codebattle.hexlet.io/#tournaments
+  expected-result: |
+    В поле "Creator" отображается имя создателя турнира
