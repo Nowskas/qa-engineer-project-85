@@ -375,13 +375,19 @@
   test-data: |
     empty
   steps:
+    #Шаги пользователя 1
     - Открываем вкладку "TOURNAMENTS"
     - Нажимаем "You may want to create one" #при первом создании турнира
     - Нажимаем "Tournaments info" #при втором и последующих созданиях турнира
     - Заполняем форму "Create a new tournament"
-    - Вводим "My fancy tournament Hexlet 2024" в поле "Name"
-    - Нажимаем "Create"
-    - Перейти по ссылке https://codebattle.hexlet.io/#tournaments
-    Полю "" присвоено значение "" 
+    - Полю "Name" присваиваем значение "Dungeon master"
+    - Полю "Type" присваиваем значение "team"
+    - Полю "Description" присваиваем значение "A tournament for real dungeon conquerors"
+    - Полю "Starts at (Etc/GMT-3)" присваиваем значение "+1 минута от вашего настоящего времени"
+    - Полю "Access type" "public"
+    - Полю "Task strategy" присваиваем значение "game"
+    - Чекбокс Use chat должен быть в активном состоянии
+    
+    
   expected-result: |
     В поле "Creator" отображается имя создателя турнира
