@@ -220,7 +220,6 @@
 #};
 
 #module.exports = solution;
-
   steps:
     - Нажимаем на кнопку "Create a game"
     - Выбираем уровень игры - "elementary" нажимаем на кнопку одна "звезда"
@@ -251,7 +250,6 @@
 #};
 
 #module.exports = solution;
-
   steps:
     #Шаги Пользователя 1
     - Пользователь 1 нажимает на имя Пользователя 2 в списке "Online players" ЛКМ
