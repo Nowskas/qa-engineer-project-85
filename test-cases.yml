@@ -51,7 +51,9 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться с помощью Github
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы на Github
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+    У пользователя имеется предварительно созданная учётная запись на Github
+    Авторизованы на Github
   test-data: |
     empty
   steps:
@@ -65,7 +67,9 @@
   requirement: |
     Пользователь должен иметь возможность авторизоваться с помощью Discord
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/. Авторизованы в Dicord
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+    У пользователя имеется предварительно созданная учётная запись на Discord
+    Авторизованы на Discord
   test-data: |
     empty
   steps:
