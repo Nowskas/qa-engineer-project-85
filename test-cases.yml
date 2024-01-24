@@ -22,8 +22,6 @@
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
     Сервис временной почты = https://10minutemail.net/
-    Логин = Sergey5111 Пароль = jioSUO9SFf1
-    e-mail: hoc973623@zbock.com
   steps:
     - Нажимаем на кнопку "Sign up"
     - Заполняем поля для регистрации
